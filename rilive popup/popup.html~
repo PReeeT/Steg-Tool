@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Reveal Demo</title>
+		
+		<!-- Attach our CSS -->
+	  	<link rel="stylesheet" href="reveal.css">	
+	  	
+		<!-- Attach necessary scripts -->
+		<!-- <script type="text/javascript" src="jquery-1.4.4.min.js"></script> -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+		<script type="text/javascript" src="jquery.reveal.js"></script>
+		
+		<style type="text/css">
+			body { font-family: "HelveticaNeue","Helvetica-Neue", "Helvetica", "Arial", sans-serif; }
+			.big-link { display:block; margin-top: 100px; text-align: center; font-size: 70px; color: #06f; }
+		</style>
+		<script>
+			function open(){
+				document.getElementById("popup").click();
+				//document.getElementById("redirect").click();
+				
+			}
+		</script>
+		
+	</head>
+	<body onload="return open();">
+
+		<a href="#" class="big-link" id="popup" data-reveal-id="myModal">
+		</a>
+	
+		<div id="myModal" class="reveal-modal">
+			<h1>Welcome to ResearchIntern Live!</h1>
+			<p>If you are opening RI Live for the first time, please create your account. For regular user please login with your ResearchIntern Live username and password.<br><br><b> Opening ResearchIntern Live might take 1-2 minutes for importing your configuration settings.</b></p>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+			
+	</body>
+</html>
